@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:elevation="8dp"
+android:layout_margin="10dp"
+app:cardCornerRadius="9dp"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="9dp"
+            android:elevation="5dp">
+            <ImageView
+                android:id="@+id/img_animal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/animal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="95dp"
+            android:text="Text"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="@color/white">
+        </TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
